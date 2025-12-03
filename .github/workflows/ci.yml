@@ -24,10 +24,13 @@ jobs:
       - name: run test
         run: npm run test
 
-  Style:
-    name: check styles
+  styles:
+    name: Style
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
       - name: check pretiert code
         run: npm run format:check
