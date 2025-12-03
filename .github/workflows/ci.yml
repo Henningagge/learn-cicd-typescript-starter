@@ -23,5 +23,6 @@ jobs:
 
       - name: run test
         run: npm run test
+
       - name: Style
         run: npm run format:check
