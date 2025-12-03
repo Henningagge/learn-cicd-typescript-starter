@@ -30,7 +30,7 @@ test("get Api Key", () => {
   expect(getAPIKey(incomingHttpHeaders)).toBe("hello123");
 });
 test("get Api key wrong", () => {
-  expect(getAPIKey(incomingHttpHeadersWrong)).toBe(nulllllll);
+  expect(getAPIKey(incomingHttpHeadersWrong)).toBe(null);
 });
 test("check for misisng Api key", () => {
   expect(getAPIKey(incomingHttpHeadersWrongShort)).toBe(null);
